@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="Encriptador de texto.css">
+    <script src="script.js"></script>
+</head>
+ 
+<body>
+    <div class="encabezado">
+        <img src="Logo Alura.png" class="logoAlura" id="logoAlura">
+        <h1>Encriptador de texto</h1>
+    </div>
+    <div class="contenedor">
+        <div class="contenidoDeTexto">
+            <div class="encriptar">
+                <textarea rows="20" id="txtEncriptar" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="encriptado">
+                <textarea rows="20" id="txtEncriptado" style="display: none;"></textarea>
+                <img src="noEncontrado.jpg" class="imagenMsgNoEncontrado" id="imagenMsgNoEncontrado">
+            </div>
+        </div>
+        <div class="botones">
+            <p>Solo se permite letras minúsculas sin acento.</p>
+            <button id="btnEncriptar" onclick="EncripteElTexto()">Encriptar</button>
+            <button id="btnDesencriptar" onclick="DesencripteElTexto()">Desencriptar</button>
+            <button id="btnCopiar" onclick="CopieElTexto()">Copiar el texto encriptado</button>
+        </div>
+        <div class="footer">
+            <p> Creado por: María Angela Campos Calvo <br>2023</br></p>
+        </div>
+</body>
+
+</html>
